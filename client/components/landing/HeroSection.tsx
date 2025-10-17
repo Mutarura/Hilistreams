@@ -17,7 +17,10 @@ export const HeroSection = () => {
       {/* Animated background gradient elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-glow-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: "1s" }}></div>
+        <div
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/15 rounded-full blur-3xl animate-glow-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
@@ -39,7 +42,8 @@ export const HeroSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          A new wave of live content is coming from Kenya — built by creators, for creators.
+          A new wave of live content is coming from Kenya — built by creators,
+          for creators.
         </p>
 
         {/* CTA Buttons */}
@@ -72,7 +76,9 @@ export const HeroSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <p className="text-sm text-muted-foreground">Discover what's coming</p>
+          <p className="text-sm text-muted-foreground">
+            Discover what's coming
+          </p>
           <button
             onClick={scrollToNextSection}
             className="text-primary hover:text-secondary transition-colors duration-300 animate-bounce"
